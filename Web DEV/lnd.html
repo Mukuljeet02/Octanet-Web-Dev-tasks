@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throttle Store</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Motorbike Store Logo">
+                <h1>Throttle Store</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#bikes">Bikes</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to Motorbike Store</h2>
+            <p>Your one-stop shop for the best motorbikes.</p>
+            <a href="#bikes" class="btn">Shop Now</a>
+        </div>
+    </section>
+    
+    <section id="bikes">
+        <div class="container">
+            <h2>Our Bikes</h2>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="sports.jpg" alt="Motorbike 1">
+                        <h3>Sport Bike</h3>
+                        <p>Designed for speed and performance.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="cru.jpg" alt="Motorbike 2">
+                        <h3>Cruiser Bike</h3>
+                        <p>Perfect for long-distance and comfortable rides.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="adv.jpg" alt="Motorbike 3">
+                        <h3>Adventure Bike</h3>
+                        <p>Built for versatility and off-road capability.</p>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>Welcome to Motorbike Store, your ultimate destination for high-quality motorbikes and accessories. Since our inception in 2020, we have been committed to delivering top-notch products and exceptional service to motorbike enthusiasts of all kinds. Whether you're a seasoned rider or new to the world of motorbikes, we have something for everyone.</p>
+                <p>Our store offers a wide range of motorbikes, from sleek sport bikes and rugged adventure bikes to comfortable cruiser bikes. We pride ourselves on providing the latest models and the most trusted brands in the industry. Our knowledgeable team is passionate about motorbikes and dedicated to helping you find the perfect bike to match your style and needs.</p>
+                <p>At Motorbike Store, we believe that riding is more than just a mode of transportation; it's a lifestyle. That's why we offer personalized services such as bike fittings and maintenance consultations to ensure that your riding experience is as enjoyable and safe as possible. We are also proud supporters of the local motorbike community, hosting events, workshops, and group rides to bring riders together.</p>
+                <p>We invite you to visit our store and explore our extensive collection of motorbikes and accessories. Whether you're looking for performance, comfort, or adventure, Motorbike Store has you covered. Join us in celebrating the thrill of the ride and become a part of our growing community of motorbike enthusiasts.</p>
+                <p>Thank you for choosing Motorbike Store. We look forward to serving you and helping you embark on your next riding adventure.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us!</p>
+            <form action="#">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Motorbike Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
